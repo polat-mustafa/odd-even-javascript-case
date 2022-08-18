@@ -15,6 +15,12 @@ rl.question("Please entry your number: ", (answer) => {
     result % 2 === 0
       ? console.log(`${answer} is an even number`)
       : console.log(`${answer} is an odd number`);
+  } else if (answer > 0 && answer < 10) {
+    answer % 2 === 0
+      ? console.log(`${answer} is an even number`)
+      : console.log(`${answer} is an odd number`);
+  } else {
+    console.log("Please enter a valid number");
   }
   rl.close();
 });
